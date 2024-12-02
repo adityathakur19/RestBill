@@ -1,0 +1,89 @@
+.reports-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reports-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .reports-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+  }
+  
+  .control-group label {
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .control-group select, 
+  .custom-date-picker input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .control-group select:focus,
+  .custom-date-picker input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .custom-date-picker {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .date-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date-input label {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (max-width: 768px) {
+    .reports-controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .control-group {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,77 @@
+/* General styles for printable content */
+#printable-content {
+    width: 3in; /* Default to 3-inch width */
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Alternate size for 2-inch paper */
+  .print-2-inch {
+    width: 2in;
+    font-size: 10px;
+  }
+  
+  /* Alternate size for 3-inch paper */
+  .print-3-inch {
+    width: 3in;
+    font-size: 12px;
+  }
+  
+  /* Table styling for bills */
+  #printable-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  #printable-content th,
+  #printable-content td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 4px;
+  }
+  
+  /* Header styling */
+  #printable-content h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  
+  #printable-content p {
+    text-align: center;
+    margin: 2px 0;
+  }
+  
+  /* Footer styling */
+  #printable-content .text-right {
+    margin-top: 16px;
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  /* Print-specific styles */
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+      background: none;
+    }
+  
+    #printable-content {
+      margin: 0;
+      box-shadow: none;
+      background-color: transparent;
+      color: #000;
+    }
+  
+    .no-print {
+      display: none;
+    }
+  }
+  
